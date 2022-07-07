@@ -1,0 +1,20 @@
+<script>
+//AnoBissexto - Recebe um ano e informa se ele é bissexto ou não.
+
+document.write (`<h1>Ano Bissexto</h1>`)
+
+const ano = parseInt (prompt(`Digite um número`))
+
+const restodivisao = parseFloat(ano % 4)
+if (restodivisao==0) {
+    document.write (`Ano: ${ano}<br>`)
+
+    document.write (`É um ano bissexto? Sim`)
+}
+
+else {
+    document.write (`Ano: ${ano}<br>`)
+
+    document.write (`É um ano bissexto? Não`)
+}
+</script>
