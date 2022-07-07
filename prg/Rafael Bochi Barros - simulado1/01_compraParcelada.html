@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+    // Para auxiliar uma loja que deseja parcelar o valor das compras de seus clientes, elabore um algoritmo que leia o valor de uma compra e o número de prestações desejadas, e escreva o valor das prestações, com duas casas decimais (centavos).
+    // Por exemplo, se uma compra for de R$ 100,00, parcelada em 5 vezes, cada prestação será de R$ 20,00 (esse é um exemplo meramente ilustrativo).
+
+    document.write ("<h1>Compra Parcelada</h1>")
+
+    // Entrada de dados: o que o usuário vai precisar informar
+
+    const valordacompra = Number(prompt("Informe o valor da compra"))
+
+    const parcelas = parseInt(prompt("Em quantas parcelas vai passar o produto?"))
+
+    // Processamento: os cálculos para chegar no valor de saída, a partir dos dados de entrada
+
+    const valordasparcelas = Number(valordacompra/parcelas)
+
+    // Saída: a informação que foi calculada e será mostrada ao usuário
+
+document.write (`Valor do produto: R$ ${valordacompra.toFixed(2)} <br>`)
+
+document.write (`Parcelas: ${parcelas}<br>`)
+
+document.write (`Valor de cada parcela: R$ ${valordasparcelas.toFixed(2)}`)
+</script>
