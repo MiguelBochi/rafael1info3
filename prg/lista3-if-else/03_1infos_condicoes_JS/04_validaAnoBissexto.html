@@ -4,13 +4,14 @@
     Faça um script que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto.
     */
 
-    //ENTRADA
+    const ano = parseInt(prompt(`infrome um ano`))
 
+    restodivisao = (ano % 4)
 
-    //PROCESSAMENTO
-
-    
-    //SAÍDA
-
-
+    if (restodivisao == 0){
+        document.write (`O ano ${ano} é bissexto`)
+    }
+    else {
+        document.write (`O ano ${ano} não é bissexto`)
+    }
 </script>
